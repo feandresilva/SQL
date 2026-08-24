@@ -7,6 +7,8 @@ select name, appearance_count, first_appearance from superheroes where first_app
 -- 2 - Exiba o nome e a quantidade de aparições dos personagens que possuem olhos azuis, 
 -- cabelos pretos e mais de 500 aparições. Limite o resultado a 10 registros.
 
+select name, appearance_count from superheroes where appearance_count > 500 and eye_color = 'Blue Eyes'and hair_color = 'Black Hair'; 
+
 -- 3 - Exiba os personagens que apareceram em 1940, possuem cabelos loiros e mais de 200 aparições. 
 -- Limite o resultado a 10 registros.
 
