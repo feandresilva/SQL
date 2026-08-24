@@ -12,6 +12,8 @@ select name, appearance_count from superheroes where appearance_count > 500 and 
 -- 3 - Exiba os personagens que apareceram em 1940, possuem cabelos loiros e mais de 200 aparições. 
 -- Limite o resultado a 10 registros.
 
+
+
 -- 4 - Exiba os personagens que possuem olhos verdes ou olhos roxos e que tenham mais de 300 aparições. 
 -- Utilize parênteses corretamente no filtro e limite o resultado a 10 registros.
 
