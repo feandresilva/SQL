@@ -26,6 +26,8 @@ select name, eye_color, appearance_count from superheroes where (eye_color = 'Gr
 -- 6 - Exiba os personagens com olhos azuis e mais de 500 aparições. 
 -- Ordene pela quantidade de aparições, da maior para a menor, e mostre somente os 10 primeiros.
 
+
+
 -- 7 - Exiba os 10 personagens com maior quantidade de aparições em toda a tabela.
 
 -- 8 - Exiba os 10 personagens mais antigos que possuem mais de 200 aparições. 
