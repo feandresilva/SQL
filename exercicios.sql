@@ -2,12 +2,12 @@
 -- que possuem mais de 1.000 aparições. Ordene da maior quantidade para a menor 
 -- e limite o resultado a 10 registros.
 
-select name, appearance_count, first_appearance from superheroes where first_appearance > 1000 order by appearance_count desc limit 10;
+select name, appearance_count, first_appearance from superheroes where appearance_count > 1000 order by appearance_count desc limit 10;
 
 -- 2 - Exiba o nome e a quantidade de aparições dos personagens que possuem olhos azuis, 
 -- cabelos pretos e mais de 500 aparições. Limite o resultado a 10 registros.
 
-select name, appearance_count from superheroes where appearance_count > 500 and eye_color = 'Blue Eyes'and hair_color = 'Black Hair'; 
+select name, appearance_count from superheroes where appearance_count > 500 and eye_color = 'Blue Eyes'and hair_color = 'Black Hair' limit 10; 
 
 -- 3 - Exiba os personagens que apareceram em 1940, possuem cabelos loiros e mais de 200 aparições. 
 -- Limite o resultado a 10 registros.
@@ -16,6 +16,9 @@ select name, appearance_count from superheroes where appearance_count > 500 and 
 
 -- 4 - Exiba os personagens que possuem olhos verdes ou olhos roxos e que tenham mais de 300 aparições. 
 -- Utilize parênteses corretamente no filtro e limite o resultado a 10 registros.
+
+select name, eye_color, appearance_count from superheroes where (eye_color = 'Green Eyes' or eye_color = 'Purple Eyes') and appearance_count > 300 limit 10;
+
 
 -- 5 - Exiba os personagens que apareceram em 1999, possuem cabelos pretos e pelo menos 200 aparições. 
 -- Limite o resultado a 5 registros.
